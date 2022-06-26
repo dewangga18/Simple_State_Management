@@ -23,10 +23,13 @@ class ModuleList extends StatelessWidget {
     return ListView.builder(
       itemCount: moduleList.length,
       itemBuilder: (context, index) {
+        //implementasi provider
+        //usahakan untuk membungkus yang detail saja
         return Consumer<DoneModuleProvider>(
           builder: (context, DoneModuleProvider data, widget){
             return ModuleTile(
               moduleName: moduleList[index],
+              //merubah nilai bool isDone
               isDone: data.doneModuleList.contains(
                 moduleList[index]
               ),

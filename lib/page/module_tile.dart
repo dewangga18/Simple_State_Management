@@ -14,6 +14,7 @@ class ModuleTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
+      //merubah menjadi icon done jika done ditekan
       title: Text(moduleName),
       trailing: isDone 
         ? const Icon(Icons.done)

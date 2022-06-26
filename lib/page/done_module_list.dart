@@ -6,6 +6,7 @@ import 'done_module_provider.dart';
 class DoneModuleList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    //listen digunakan untuk rebuild ui
     final doneModuleList = Provider.of<DoneModuleProvider>(context, listen: false).doneModuleList;
     return Scaffold(
       appBar: AppBar(

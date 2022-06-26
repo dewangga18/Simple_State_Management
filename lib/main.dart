@@ -9,9 +9,12 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    //implementasi library provider
+    //pokok ini diperlukan
     return ChangeNotifierProvider(
       create: ((context) => DoneModuleProvider()),
       child: MaterialApp(
+        //menghilangkan teks debug di pojok kanan atas
         debugShowCheckedModeBanner: false,
         title: 'Flutter Demo',
         theme: ThemeData(
